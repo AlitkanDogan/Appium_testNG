@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class Calculator_Test {
+public class Day02_Calculator_Test {
 
     AndroidDriver<AndroidElement> driver;
 

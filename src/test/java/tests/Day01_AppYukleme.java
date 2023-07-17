@@ -10,7 +10,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class AppYukleme {
+public class Day01_AppYukleme {
 
     AndroidDriver<AndroidElement> driver;
 
@@ -22,7 +22,7 @@ public class AppYukleme {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2"); // eğer kullandığımız 6 veya üstüyse Uiautomator2 kullanılır
-        //capabilities.setCapability(MobileCapabilityType.APP, "D:\\TEAM113\\APPIUM-T113.git\\Apps\\Apk Bilgisi_2.3.4_apkcombo.com.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "D:\\TEAM113\\APPIUM-T113.git\\Apps\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure (1).apk");
         //uygulamayyı yüklemek iöçin kullanırız. eğer uygulama yklü ise açılır.
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
